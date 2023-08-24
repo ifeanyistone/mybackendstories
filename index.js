@@ -88,7 +88,7 @@
           console.log("Api is running on port 3000")
          })
 
-          console.log("connected to data base mongodb")
+          console.log("connected to a data base ")
          })
          .catch(()=>{
          console.log("this is an error message")})
