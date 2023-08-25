@@ -60,10 +60,9 @@
             // console.log(evenNumbers.slice(2,4))
 
 
-       // import mongoose from 'mongoose';
-        const mongoose = require('mongoose')
-
          const express = require('express')
+         const mongoose = require('mongoose')
+
          const app = express()
           
          //routes 
@@ -75,11 +74,9 @@
           res.send('hey its about section')
          })
 
-         app.get('/home',(req,res)=>{
-          res.send('hey bro its the home page')
-         })
-
-        
+        app.get('/Contact', (req, res)=>{
+          res.send("Hey dont hesitate to reach us through our email")
+        })
 
          mongoose.connect('mongodb+srv://admin:admin123@cluster0.rpwjesx.mongodb.net/node-api?retryWrites=true&w=majority')
          .then(()=>{
@@ -91,5 +88,6 @@
           console.log("connected to a data base ")
          })
          .catch(()=>{
-         console.log("this is an error message")})
+         console.log("this is an error message")
+        })
        
