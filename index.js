@@ -15,29 +15,7 @@
 //     console.log(Math.floor(ran*10000))
 // }
 
-// const head = document.querySelector('h4')
-// const page = document.querySelector('.pages')
-//   page.style.color = 'red';
-
-//   head.style.color = "green";
-
-// document.getElementById('convert').addEventListener('submit',function(e){
-//     e.preventDefault();
-
-//     let val = document.getElementById('name').value
-
-//     if(val < 10 ){
-
-//         console.log("NaN")
-//     }else{
-
-//         document.getElementById('ans').innerHTML = val;
-
-//         // console.log('a number')
-//     }
-//     val.value = ""
-// })
-
+//
 //    let arr1 = ["tea", "coffe", "lipton"]
 
 //  let arr2  = ["tea", "coffe", "lipton", "pine"];
@@ -49,52 +27,52 @@
       //    let ren =  evenNumbers.reduce((acc, val)=>  acc += val ,initial)
       //   console.log(ren)
       // console.log(evenNumbers.slice(2,4))
-      import { Axios } from "axios";
-      const express = require("express");
-      const mongoose = require("mongoose");
+      // import { Axios } from "axios";
+      // const express = require("express");
+      // const mongoose = require("mongoose");
 
-      const app = express();
+      // const app = express();
 
-      //routes
-      app.get("/", (req, res) => {
-        res.send("hello API");
-      });
+      // //routes
+      // app.get("/", (req, res) => {
+      //   res.send("hello API");
+      // });
 
-      app.get("/about", (req, res) => {
-        res.send("hey its about section");
-      });
+      // app.get("/about", (req, res) => {
+      //   res.send("hey its about section");
+      // });
 
-      app.get("/Contact", (req, res) => {
-        res.send("Hey dont hesitate to reach us through our email");
-      });
+      // app.get("/Contact", (req, res) => {
+      //   res.send("Hey dont hesitate to reach us through our email");
+      // });
 
-      mongoose
-        .connect(
-          "mongodb+srv://admin:admin123@cluster0.rpwjesx.mongodb.net/node-api?retryWrites=true&w=majority"
-        )
-        .then(() => {
-          app.listen(3000, () => {
-            console.log("Api is running on port 3000");
-          });
+      // mongoose
+      //   .connect(
+      //     "mongodb+srv://admin:admin123@cluster0.rpwjesx.mongodb.net/node-api?retryWrites=true&w=majority"
+      //   )
+      //   .then(() => {
+      //     app.listen(3000, () => {
+      //       console.log("Api is running on port 3000");
+      //     });
 
-          console.log("connected to a data base ");
-        })
-        .catch(() => {
-          console.log("this is an error message");
-        });
+      //     console.log("connected to a data base ");
+      //   })
+      //   .catch(() => {
+      //     console.log("this is an error message");
+      //   });
 
-   function App(){
-       
-    
-        //   fetch()
+      
+        //   fetch("http://localhost:3000")
         // .then((res) => res.json())
         // .then((data) => {
         //   console.log(data)
         // })
 
-        Axios.get("http://localhost:3000/about").then((res))=> {
-          console.log(res.data)
-        }
+        // Axios.get("http://localhost:3000/about").then((res))=> {
+        //   console.log(res.data)
+        // }
        
-      }
-   
+   const os = require('os')
+
+   const osVersion = os.version()
+   console.log(osVersion)
