@@ -16,14 +16,19 @@
 // }
 
 //
-//    let arr1 = ["tea", "coffe", "lipton"]
+   let arr1 = ["tea", "coffe", "lipton"]
 
 //  let arr2  = ["tea", "coffe", "lipton", "pine"];
 
       const arr3 = ["tea", "coffe", "lipton"];
-      const arr2 = ["tea", "coffe", "lipton", "pine"];
+      const arr2 = [];
 
       let evenNumbers = [2, 4, 6, 8, 10];
+
+      //reducer method
+      const newValu = evenNumbers.reduce((acc, value)=>acc + value , 0)
+      console.log(newValu)
+    
       //    let ren =  evenNumbers.reduce((acc, val)=>  acc += val ,initial)
       //   console.log(ren)
       // console.log(evenNumbers.slice(2,4))
